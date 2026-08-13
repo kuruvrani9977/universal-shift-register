@@ -1,0 +1,9 @@
+The testbench performs these operations:
+ Time  | Mode | Operation            | Expected `q` |
+| ----- | ---- | -------------------- | ------------ |
+| 0 ns  | 00   | Reset                | `0000`       |
+| 10 ns | 11   | Parallel Load `1010` | `1010`       |
+| 20 ns | 01   | Shift Right          | `1101`       |
+| 30 ns | 10   | Shift Left           | `1010`       |
+| 40 ns | 00   | Hold                 | `1010`       |
+| 50 ns | 11   | Parallel Load `1100` | `1100`       |
